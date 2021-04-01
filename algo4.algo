@@ -1,0 +1,19 @@
+    FUNCTION function_name(tab) : array_name : ARRAY_OF INTEGER;
+    VAR
+    va:INTEGER
+    tab:array_name : ARRAY_OF INTEGER;
+    BEGIN
+        FOR i FROM 0 TO max STEP 1  DO
+            var j:INTEGER:=0;
+            WHILE (j<i && val>tab[j]) DO
+                j++
+            END_WHILE
+            FOR k FROM k=i TO max k>=j step -1 DO
+                tab[k]=tab[k-1]
+            END_FOR
+            tab[j]=val
+        END_FOR
+        RETURN tab ;
+    END
+    
+    
